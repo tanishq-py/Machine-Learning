@@ -29,6 +29,7 @@ even(63283628732)
 lst = [1,2,3,4,5]
 type(lst)
 
+
 [i for i in lst]  #[1,2,3,4,5]
 
 lst2= [2,4,3,5]
@@ -44,9 +45,17 @@ def even_or_odd(num):
 even_or_odd(34)
 
 lst = [2,3,5,6,7,8]
-list(map(even_or_odd, lst))
+list(map(even_or_odd, lst))  #[True, False, False, True, False, True]
 
+function , lambda, map function, list comprehension
 
+#filter functions
+def even(num):
+  if num%2==0:
+    return True
+
+lst = [12,3,4,5,6,7]
+list(filter(even, lst))  #[12, 4, 6]
 
 
   
