@@ -25,5 +25,28 @@ add(12,14)
 even= lambda a:a%2==0 
 even(63283628732)
 
+#list comprehension in python
+lst = [1,2,3,4,5]
+type(lst)
+
+[i for i in lst]  #[1,2,3,4,5]
+
+lst2= [2,4,3,5]
+[i for i in lst2  if i%2==0]  #[2,4]
+
+#map function
+def even_or_odd(num):
+  if num%2==0:
+    return True
+  else:
+    return False
+
+even_or_odd(34)
+
+lst = [2,3,5,6,7,8]
+list(map(even_or_odd, lst))
+
+
+
 
   
